@@ -1,4 +1,216 @@
 body {
   font-family: 'Proxima Nova';
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  body a {
+    color: #fff; }
+
+.btn {
+  border-top: 0 !important; }
+
+.bbn {
+  border-bottom: 0 !important; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 250px;
+  width: 100%;
+  margin-top: 100px; }
+
+nav .navigation {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  nav .navigation-title {
+    padding: 9px 130px 9px 20px;
+    border-radius: 5px 5px 0 0;
+    /* ff3.6+ */
+    /* safari4+,chrome */
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(45deg, #244386 0%, #2c539e 100%);
+    /* opera 11.10+ */
+    /* ie10+ */
+    background: linear-gradient(45deg, #244386 0%, #2c539e 100%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c539e', endColorstr='#244386', GradientType=1);
+    /* ie6-9 */ }
+    nav .navigation-title h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-weight: normal;
+      text-shadow: 0px 1px 1px #0000009c; }
+  nav .navigation-items {
+    /* Icon Hover */
+    /* End Icon Hover */
+    /*SUB MENU */ }
+    nav .navigation-items:hover {
+      border-bottom: 1px solid #BC202B !important;
+      border-color: transparent; }
+    nav .navigation-items:hover .navigation-items__header {
+      -webkit-transition: all .4s linear;
+      -o-transition: all .4s linear;
+      transition: all .4s linear;
+      background-image: none;
+      background-color: #BC202B;
+      border-color: #BC202B; }
+    nav .navigation-items:hover .navigation-items__header-link {
+      color: #fff;
+      -webkit-transition: all .4s linear;
+      -o-transition: all .4s linear;
+      transition: all .4s linear; }
+    nav .navigation-items:hover .navigation-items__header-icon1 {
+      -webkit-transition: all .1s linear;
+      -o-transition: all .1s linear;
+      transition: all .1s linear;
+      background-position: -3px -30px; }
+    nav .navigation-items:hover .depIcon {
+      background-position: -28px -19px !important; }
+    nav .navigation-items:hover .loanIcon {
+      background-position: -46px -24px !important; }
+    nav .navigation-items:hover .accountIcon {
+      background-position: -74px -30px !important; }
+    nav .navigation-items:hover .transIcon {
+      background-position: -89px -19px !important; }
+    nav .navigation-items:hover .billIcon {
+      background-position: -125px -20px !important; }
+    nav .navigation-items:hover .currIcon {
+      background-position: -135px -19px !important; }
+    nav .navigation-items:hover .navigation-items__header-icon2 {
+      -webkit-transition: all .1s linear;
+      -o-transition: all .1s linear;
+      transition: all .1s linear;
+      background-position: -3px -10px; }
+    nav .navigation-items__header {
+      border: 1px solid #DADADA;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 9px 0 9px 20px;
+      background-image: url(../img/itembg.png);
+      background-repeat: repeat-x;
+      -webkit-transition: background .4s linear;
+      -o-transition: background .4s linear;
+      transition: background .4s linear; }
+      nav .navigation-items__header-icon1 {
+        background: url(../img/mystripes.png) no-repeat -3px -7px;
+        background-size: 170px 55px;
+        width: 24px;
+        height: 16px; }
+      nav .navigation-items__header-link {
+        -webkit-transition: all .1s linear;
+        -o-transition: all .1s linear;
+        transition: all .1s linear;
+        text-decoration: none;
+        color: #333333;
+        font-size: 16px;
+        font-weight: 700;
+        padding-left: 10px;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 0px;
+                flex: 1 1 0; }
+      nav .navigation-items__header-icon2 {
+        -webkit-transition: all .1s linear;
+        -o-transition: all .1s linear;
+        transition: all .1s linear;
+        background: url(../img/mystripes2.png) no-repeat -2px -1px;
+        background-size: 18px 20px;
+        width: 22px;
+        height: 8px; }
+    nav .navigation-items__subMenu {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      -webkit-transition: all .4s linear;
+      -o-transition: all .4s linear;
+      transition: all .4s linear; }
+      nav .navigation-items__subMenu li {
+        padding: 0;
+        margin: 0; }
+        nav .navigation-items__subMenu li a {
+          display: block;
+          padding: 9px 0 9px 20px;
+          text-decoration: none;
+          color: #333;
+          font-size: 13px;
+          background-image: url(../img/itembg.png);
+          background-repeat: repeat-x;
+          border-top: 0 !important;
+          border: 1px solid #DADADA;
+          -webkit-transition: all .4s linear;
+          -o-transition: all .4s linear;
+          transition: all .4s linear; }
+          nav .navigation-items__subMenu li a:hover {
+            background-color: rgba(42, 79, 152, 0.8);
+            background-image: none;
+            border-color: rgba(42, 79, 152, 0.8);
+            -webkit-transition: all .1s linear;
+            -o-transition: all .1s linear;
+            transition: all .1s linear;
+            color: #fff; }
+
+/* FIX SPRITE */
+.depIcon {
+  background: url(../img/mystripes.png) no-repeat -28px -3px !important;
+  background-size: 185px 39px !important; }
+
+.loanIcon {
+  background: url(../img/mystripes.png) no-repeat -46px -5px !important;
+  background-size: 170px 46px !important; }
+
+.accountIcon {
+  background: url(../img/mystripes.png) no-repeat -74px -7px !important;
+  background-size: 181px 55px !important; }
+
+.transIcon {
+  background: url(../img/mystripes.png) no-repeat -89px -3px !important;
+  background-size: 165px 39px !important; }
+
+.billIcon {
+  background: url(../img/mystripes.png) no-repeat -125px -3px !important;
+  background-size: 187px 40px !important; }
+
+.currIcon {
+  background: url(../img/mystripes.png) no-repeat -135px -3px !important;
+  background-size: 170px 39px !important; }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #171C21;
+  width: 100%;
+  padding: 10px 0; }
+  .footer p {
+    text-align: center; }
+    .footer p a {
+      text-decoration: none;
+      font-size: 30px;
+      color: #ffffff;
+      -webkit-transition: all .4s linear;
+      -o-transition: all .4s linear;
+      transition: all .4s linear; }
+      .footer p a:hover {
+        color: #a6a6a6;
+        -webkit-transition: all .4s linear;
+        -o-transition: all .4s linear;
+        transition: all .4s linear; }

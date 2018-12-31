@@ -6,8 +6,257 @@ body {
   font-family: 'Proxima Nova';
   padding: 0;
   margin: 0;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  a {
+    color: #fff;
+  }
 }
 
+.btn {
+  border-top: 0 !important;
+}
+
+.bbn {
+  border-bottom: 0 !important;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 250px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+nav {
+
+  .navigation {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &-title {
+      padding: 9px 130px 9px 20px;
+      border-radius: 5px 5px 0 0;
+      background: -moz-linear-gradient(45deg, rgba(36, 67, 134, 1) 0%, rgba(44, 83, 158, 1) 100%);
+      /* ff3.6+ */
+      background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(36, 67, 134, 1)), color-stop(100%, rgba(44, 83, 158, 1)));
+      /* safari4+,chrome */
+      background: -webkit-linear-gradient(45deg, rgba(36, 67, 134, 1) 0%, rgba(44, 83, 158, 1) 100%);
+      /* safari5.1+,chrome10+ */
+      background: -o-linear-gradient(45deg, rgba(36, 67, 134, 1) 0%, rgba(44, 83, 158, 1) 100%);
+      /* opera 11.10+ */
+      background: -ms-linear-gradient(45deg, rgba(36, 67, 134, 1) 0%, rgba(44, 83, 158, 1) 100%);
+      /* ie10+ */
+      background: linear-gradient(45deg, rgba(36, 67, 134, 1) 0%, rgba(44, 83, 158, 1) 100%);
+      /* w3c */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c539e', endColorstr='#244386', GradientType=1);
+      /* ie6-9 */
+
+      h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: normal;
+        text-shadow: 0px 1px 1px #0000009c;
+
+      }
+    }
+
+    &-items {
+
+      // outline: 1px solid red;
+      //border:1px solid #DADADA;
+      &:hover {
+        border-bottom: 1px solid #BC202B !important;
+        border-color: transparent;
+      }
+
+      &:hover .navigation-items__header {
+        transition: all .4s linear;
+        background-image: none;
+        background-color: #BC202B;
+        border-color: #BC202B;
+      }
+
+      &:hover .navigation-items__header-link {
+        color: #fff;
+        transition: all .4s linear;
+      }
+
+      /* Icon Hover */
+
+      &:hover .navigation-items__header-icon1 {
+        transition: all .1s linear;
+        background-position: -3px -30px;
+      }
+
+      &:hover .depIcon {
+        background-position: -28px -19px !important;
+      }
+
+      &:hover .loanIcon {
+        background-position: -46px -24px !important;
+      }
+
+      &:hover .accountIcon {
+        background-position: -74px -30px !important;
+      }
+
+      &:hover .transIcon {
+        background-position: -89px -19px !important;
+      }
+
+      &:hover .billIcon {
+        background-position: -125px -20px !important;
+      }
+
+      &:hover .currIcon {
+        background-position: -135px -19px !important;
+      }
+
+      /* End Icon Hover */
+      &:hover .navigation-items__header-icon2 {
+        transition: all .1s linear;
+        background-position: -3px -10px;
+      }
+
+      &__header {
+        //outline: 1px solid yellow;
+        border: 1px solid #DADADA;
+        display: flex;
+        align-items: center;
+        padding: 9px 0 9px 20px;
+        background-image: url(../img/itembg.png);
+        background-repeat: repeat-x;
+        transition: background .4s linear;
+
+        &-icon1 {
+          background: url(../img/mystripes.png) no-repeat -3px -7px;
+          background-size: 170px 55px;
+          width: 24px;
+          height: 16px;
+          //transition: all .1s linear;
+        }
+
+        &-link {
+          transition: all .1s linear;
+          text-decoration: none;
+          color: #333333;
+          font-size: 16px;
+          font-weight: 700;
+          padding-left: 10px;
+          flex: 1 1 0;
+        }
+
+        &-icon2 {
+          transition: all .1s linear;
+          background: url(../img/mystripes2.png) no-repeat -2px -1px;
+          background-size: 18px 20px;
+          width: 22px;
+          height: 8px;
+        }
+      }
+
+      /*SUB MENU */
 
 
+      &__subMenu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all .4s linear;
 
+        li {
+          padding: 0;
+          margin: 0;
+
+          a {
+            display: block;
+            padding: 9px 0 9px 20px;
+            text-decoration: none;
+            color: #333;
+            font-size: 13px;
+            background-image: url(../img/itembg.png);
+            background-repeat: repeat-x;
+            border-top: 0 !important;
+            border: 1px solid #DADADA;
+            transition: all .4s linear;
+
+            &:hover {
+              background-color: rgba(42, 79, 152, .8);
+              background-image: none;
+              border-color: rgba(42, 79, 152, .8);
+              transition: all .1s linear;
+              color: #fff;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+/* FIX SPRITE */
+
+.depIcon {
+  background: url(../img/mystripes.png) no-repeat -28px -3px !important;
+  background-size: 185px 39px !important;
+}
+
+.loanIcon {
+  background: url(../img/mystripes.png) no-repeat -46px -5px !important;
+  background-size: 170px 46px !important;
+}
+
+.accountIcon {
+  background: url(../img/mystripes.png) no-repeat -74px -7px !important;
+  background-size: 181px 55px !important;
+}
+
+.transIcon {
+  background: url(../img/mystripes.png) no-repeat -89px -3px !important;
+  background-size: 165px 39px !important;
+}
+
+.billIcon {
+  background: url(../img/mystripes.png) no-repeat -125px -3px !important;
+  background-size: 187px 40px !important;
+}
+
+.currIcon {
+  background: url(../img/mystripes.png) no-repeat -135px -3px !important;
+  background-size: 170px 39px !important;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0; 
+  background-color:#171C21;
+  width: 100%;
+  padding: 10px 0;
+  p{
+    text-align: center;
+    a{
+      text-decoration: none;
+      font-size: 30px;
+      color: #ffffff;
+      transition: all .4s linear;
+      &:hover{
+        color: darken(#fff, 35%);
+      transition: all .4s linear;
+      }
+    }
+  }
+}
