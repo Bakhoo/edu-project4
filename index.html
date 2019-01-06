@@ -7,17 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/fonts.css">
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
   <title>edu-project-4</title>
 </head>
 
 <body>
   <div class="wrapper">
-    <nav>
-
-      <ul class="navigation">
-        <li class="navigation-title">
+      <div class="title">
           <h1>Navigation menu</h1>
-        </li>
+      </div>
+    <nav>
+      <ul class="navigation">
         <li class="navigation-items">
           <div class="navigation-items__header btn">
             <div class="navigation-items__header-icon1"></div>
@@ -136,33 +136,12 @@
 </div>
 
 
-  <!--   <nav>
-    <ul class="menu">
-      <li class="menu-item">
-        <a href="#">Punkt1</a>
-        <ul class="sub-menu">
-          <li><a href="#">Podpunkt1</a></li>
-          <li><a href="#">Podpunkt2</a></li>
-          <li><a href="# ">Podpunkt3</a></li>
-        </ul>
-      </li>
 
-      <li class="menu-item">
-        <a href="#">Punkt2</a>
-      </li>
+ 
 
-      <li class="menu-item">
-        <a href="#">Punkt3</a>
-        <ul class="sub-menu">
-          <li><a href="#">Podpunkt1</a></li>
-          <li><a href="#">Podpunkt2</a></li>
-          <li><a href="# ">Podpunkt3</a></li>
-        </ul>
-      </li>  
-    </ul>
-  </nav> -->
 
   <script>
+
     var el = document.getElementsByClassName('navigation-items');
     for (var i = 0; i < el.length; i++) {
       el[i].addEventListener('mouseenter', showSub, false);
